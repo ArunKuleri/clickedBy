@@ -39,11 +39,7 @@ class _AuthenticationPageState extends State<AuthenticationPage> {
             padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 35),
             child: Column(
               children: [
-                Container(
-                  width: 300,
-                  height: 300,
-                  child: Image.asset("assets/images/canon1.png"),
-                ),
+                const Images(),
                 const SizedBox(
                   height: 10,
                 ),
@@ -59,7 +55,7 @@ class _AuthenticationPageState extends State<AuthenticationPage> {
                   height: 10,
                 ),
                 const Text(
-                  "Add your Phone number. We'll send your a verification code",
+                  "Register with us & Build your Network",
                   style: TextStyle(
                     fontSize: 14,
                     color: Colors.white,
@@ -90,7 +86,7 @@ class _AuthenticationPageState extends State<AuthenticationPage> {
                           color: Colors.white),
                       hoverColor: Colors.white,
                       enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(40),
                         borderSide: const BorderSide(color: Colors.white),
                       ),
                       focusedBorder: OutlineInputBorder(
