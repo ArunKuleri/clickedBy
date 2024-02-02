@@ -1,5 +1,6 @@
 import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/login_signup.dart';
 import 'package:flutter_application_1/widget/custom_button.dart';
 import 'package:flutter_application_1/widget/images.dart';
 
@@ -154,7 +155,10 @@ class _AuthenticationPageState extends State<AuthenticationPage> {
                   )),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const Login()));
+                  },
                   child: const Text(
                     "Click Here",
                     style: TextStyle(color: Colors.white),
